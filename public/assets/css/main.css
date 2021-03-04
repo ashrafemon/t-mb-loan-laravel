@@ -1,0 +1,916 @@
+/*
+==========================
+Font Family Start
+==========================
+*/
+@font-face {
+    src: url("../fonts/CircularStd-Bold.woff");
+    font-family: "Circular Bold";
+}
+
+@font-face {
+    src: url("../fonts/CircularStd-Book.woff");
+    font-family: "Circular Book";
+}
+
+@font-face {
+    src: url("../fonts/Nitti-Grotesk-SemiLight.woff");
+    font-family: "Nitti Grotesk Semi";
+}
+
+/*
+==========================
+Font Family End
+==========================
+*/
+/*
+==========================
+Global Class Start
+==========================
+*/
+.bg-theme {
+    background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+}
+
+.text-theme {
+    color: #900a22;
+}
+
+.btn-theme {
+    background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+    color: #ffffff;
+    font-family: "Circular Book";
+    border-radius: 1.5rem;
+}
+
+.btn-theme:hover {
+    background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
+    color: #ffffff;
+}
+
+.btn-theme-text {
+    font-family: "Circular Bold";
+    color: #900a22;
+}
+
+/*
+==========================
+Global Class Start
+==========================
+*/
+/*
+==========================
+Navigation Bar Start
+==========================
+*/
+.navbar_wrapper .site_navbar {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+    box-sizing: border-box;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_brand a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Circular Book";
+    font-size: 2rem;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_brand .mobileNavToggler {
+    display: none;
+    color: #ffffff;
+    font-family: "Circular Book";
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown {
+    position: relative;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav {
+    width: 200px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+    display: none;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item {
+    color: #ffffff;
+    font-family: "Circular Book";
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid crimson;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:first-child {
+    border-top: 0;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:hover {
+    background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link {
+    font-family: "Circular Book";
+    color: #ffffff;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link .dropdown_icon {
+    font-size: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link span {
+    margin-left: 5px;
+}
+
+.navbar_wrapper .site_navbar .site_navbar_nav .nav-link:hover {
+    color: yellow;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav {
+    display: none;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 2rem 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+    z-index: 2000;
+    overflow: auto;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .brand {
+    position: relative;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .brand .nav-link {
+    font-family: "Circular Book";
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .brand .nav-link .site_name {
+    position: relative;
+    top: 5px;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .brand .site_navbar_mobile_nav_close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-item {
+    width: 100%;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav {
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: none;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item {
+    color: #ffffff;
+    font-family: "Circular Book";
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    padding: 10px;
+    border-top: 1px solid crimson;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:first-child {
+    border-top: 0;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-item.dropdown .dropdown_nav .dropdown_nav_item:hover {
+    background: linear-gradient(90deg, #0a8d90 0%, #58ca2d 100%);
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-link {
+    font-family: "Circular Book";
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-link .dropdown_icon {
+    font-size: 10px;
+    position: relative;
+    top: -3px;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-link span {
+    margin-left: 5px;
+}
+
+.navbar_wrapper .site_navbar_mobile_nav .nav .nav-link:hover {
+    color: yellow;
+}
+
+/* Navigation Bar Media Query Start */
+@media (max-width: 972px) {
+    .navbar_wrapper .site_navbar_brand {
+        flex: 1;
+    }
+
+    .navbar_wrapper .site_navbar_brand .mobileNavToggler {
+        display: block !important;
+    }
+
+    .navbar_wrapper .site_navbar_nav {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .site_navbar_mobile_nav {
+        width: 100% !important;
+    }
+}
+
+/* Navigation Bar Media Query End */
+/*
+==========================
+Navigation Bar End
+==========================
+*/
+/*
+==========================
+Hero Wrapper Start
+==========================
+*/
+.hero_wrapper {
+    background: #ffffff url("../img/aussie-hero-image.png") no-repeat top center scroll;
+    background-size: 100% 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Hero Wrapper Media Query Start */
+@media (max-width: 767px) {
+    .hero_wrapper {
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero_wrapper {
+        height: 500px;
+        padding-bottom: 2.5rem;
+    }
+
+    .hero_card .card-body h2 {
+        font-size: 2.3rem;
+    }
+
+    .hero_card .card-body h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .hero_wrapper {
+        height: 500px;
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 374px) {
+    .hero_wrapper {
+        height: 90vh;
+        padding-bottom: 2rem;
+    }
+
+    .hero_card .card-body h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Hero Wrapper Media Query End */
+/*
+==========================
+Hero Wrapper Start
+==========================
+*/
+.calculation_wrapper .card {
+    background: #ffffff url("../img/Home-Loan.jpg") no-repeat top center scroll;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.calculation_wrapper .card .card-body h1 {
+    font-family: "Circular Bold";
+    margin-bottom: 1.5rem;
+}
+
+/*
+==========================
+Banner Start
+==========================
+*/
+.banner_section {
+    width: 100%;
+    height: 300px;
+    background: url("../img/Home-Loan.jpg") no-repeat top center fixed;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+}
+
+.banner_section:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #900a22 0%, rgba(202, 48, 45, 0.4402135854) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*
+==========================
+Banner Start
+==========================
+*/
+/*
+==========================
+Footer Start
+==========================
+*/
+.footer_wrapper .footer_item h5 {
+    font-family: "Circular Book";
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.footer_wrapper .footer_item h5::after {
+    content: "";
+    width: 10%;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer_wrapper .footer_item .nav .nav-item {
+    margin-bottom: 5px;
+}
+
+.footer_wrapper .footer_item .nav .nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.footer_wrapper .footer_item .nav .nav-item .nav-link {
+    font-family: "Nitti Grotesk Semi";
+    padding: 0;
+    color: #ffffff;
+}
+
+.footer_wrapper .copyright p {
+    font-family: "Nitti Grotesk Semi";
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    text-align: justify;
+    margin: 0;
+}
+
+/*
+==========================
+Banner Start
+==========================
+*/
+/*
+==========================
+Contact Form Accordion Start
+==========================
+*/
+#contactFormAccordion .card .card-body h6 {
+    font-family: "Circular Book";
+}
+
+#contactFormAccordion .card .card-body .form-group label {
+    font-family: "Nitti Grotesk Semi";
+}
+
+#contactFormAccordion .card .card-body .form-group .form-control {
+    font-family: "Nitti Grotesk Semi";
+}
+
+#contactFormAccordion .card .card-footer {
+    text-align: right;
+    background: #ffffff;
+}
+
+/*
+==========================
+Contact Form Accordion End
+==========================
+*/
+/*
+==========================
+User Defined CSS Start
+==========================
+*/
+/* Hero Card */
+.hero_card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition-property: background, color;
+    transition-duration: 1s;
+}
+
+.hero_card .card-body h2 {
+    font-family: "Circular Bold";
+    margin-bottom: 0.5rem;
+}
+
+.hero_card .card-body h4 {
+    font-family: "Circular Bold";
+    margin-bottom: 0.5rem;
+    color: #900a22;
+}
+
+.hero_card .card-body h5 {
+    font-family: "Nitti Grotesk Semi";
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Portlet */
+.portlet {
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    transition-property: top;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.portlet:hover {
+    border-bottom: 3px solid #ca302d !important;
+    top: -10px;
+}
+
+.portlet:hover .card-img-top .service_icon {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portlet .card-img-top {
+    position: relative;
+}
+
+.portlet .card-img-top img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portlet .card-img-top .service_icon {
+    position: absolute;
+    background: #ffffff;
+    width: 70px;
+    height: 70px;
+    bottom: -20px;
+    left: 20px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+    transition-property: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portlet .card-body h5 {
+    font-family: "Circular Bold";
+}
+
+.portlet .card-body p {
+    font-family: "Nitti Grotesk Semi";
+    font-size: 1.1rem;
+}
+
+/* Portion */
+.portion {
+    margin-top: 30px;
+}
+
+.portion .portion_title {
+    text-align: center;
+    font-family: "Circular Bold";
+}
+
+.portion .portion_desc {
+    font-family: "Nitti Grotesk Semi";
+    color: #575756;
+}
+
+.portion .portion_desc p {
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.portion .portion_desc ul {
+    font-size: 1.1rem;
+}
+
+.portion .portion_desc .portion_item {
+    padding-top: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.portion .portion_desc .portion_item h5 {
+    font-family: "Circular Bold";
+    color: #900a22;
+    text-align: left !important;
+}
+
+.portion .portion_desc .portion_img_item {
+    text-align: center;
+}
+
+.portion .portion_desc .portion_img_item img {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.portion h1,
+.portion h2,
+.portion h3,
+.portion h4,
+.portion h5,
+.portion h6 {
+    text-align: center;
+    font-family: "Circular Bold";
+    color: #900a22;
+}
+
+.portion p {
+    font-family: "Nitti Grotesk Semi";
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #575756;
+}
+
+/* Site CheckBox & Site RadioBox */
+.site_check {
+    display: inline-block;
+    font-family: "Nitti Grotesk Semi";
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #000000;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.site_check input[type=checkbox], .site_check input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+/* Site Dialog */
+.site_dialog {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity;
+    transition-duration: 2s;
+}
+
+.site_dialog .site_modal {
+    width: 70%;
+    height: 80%;
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.site_dialog .site_modal .modal_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2000;
+}
+
+.site_dialog .site_modal .modal_close .btn {
+    border-bottom-left-radius: 15px;
+}
+
+.site_dialog .site_modal .modal_content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.site_dialog .site_modal .modal_content .modal_title {
+    font-family: "Circular Bold";
+}
+
+.site_dialog .site_modal .modal_content .modal_suggestion {
+    font-family: "Nitti Grotesk Semi";
+}
+
+@media (max-width: 767px) {
+    .site_modal {
+        width: 95% !important;
+        height: 95% !important;
+    }
+}
+
+/*
+==========================
+User Defined CSS End
+==========================
+*/
+
+/*# sourceMappingURL=style.css.map */
+
+
+.admin_check {
+    display: inline-block;
+    font-family: "Nitti Grotesk Semi";
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid #000000;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin_check input[type=checkbox], .admin_check input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+
+/*Single Post Wrapper*/
+.post_wrapper {
+    margin-top: 6rem;
+}
+
+.post_wrapper h2 {
+    font-family: 'Circular Bold' !important;
+    color: #900a22 !important;
+}
+
+.post_wrapper h5 {
+    font-family: 'Circular Bold' !important;
+    color: #900a22 !important;
+}
+
+.post_wrapper .post_image {
+    width: 100%;
+    height: 400px;
+}
+
+.post_wrapper .post_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.post_wrapper .post_content p {
+    font-family: 'Nitti Grotesk Semi' !important;
+    font-size: 1.1rem;
+}
+
+/* Calculate Container */
+.calculate_container {
+    margin-top: 6rem !important;
+}
+
+
+.calculate_container h1, .calculate_container h2, .calculate_container h3, .calculate_container h4, .calculate_container h5, .calculate_container h6 {
+    font-family: "Circular Bold";
+    color: #900a22;
+}
+
+.calculate_container p {
+    font-family: "Nitti Grotesk Semi";
+    color: #575756;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+.calculate_container .calculate_header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.calculate_container .calculate_header h1 {
+    margin-bottom: 2rem;
+}
+
+.calculate_container .mortgage_card {
+    margin-bottom: 3rem;
+}
+
+.calculate_container .mortgage_card select, .calculate_container .mortgage_card input {
+    background: linear-gradient(90deg, #900a22 0%, #ca302d 100%);
+    color: #ffffff;
+    font-family: "Circular Bold";
+    border: 0;
+    border-radius: 0;
+}
+
+.calculate_container .mortgage_card select option, .calculate_container .mortgage_card input option {
+    color: #000000;
+}
+
+.calculate_container .mortgage_card input::placeholder {
+    color: #ffffff;
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_calculator .item {
+    margin-bottom: 1rem;
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_calculator .item h5 {
+    margin-bottom: 1.5rem;
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_calculator .item .input-group-text,
+.calculate_container .mortgage_calculator_wrapper .mortgage_calculator .item .form-control {
+    font-family: "Circular Bold";
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_calculator .item label {
+    font-family: "Nitti Grotesk Semi";
+    font-size: 1.1rem;
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_result .item {
+    padding: 10px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_result .item .smallFont {
+    font-size: 1.1rem;
+    color: #575756;
+    font-family: "Nitti Grotesk Semi";
+}
+
+.calculate_container .mortgage_calculator_wrapper .mortgage_result .item .bigFont {
+    font-family: "Circular Bold";
+    color: #900a22;
+}
+
+.calculate_container .borrow_calculate_card .card-header {
+    background: #ffffff;
+}
+
+.calculate_container .borrow_calculate_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .borrow_calculate_card .borrow_basic {
+    border-bottom: 1px solid #ffffff;
+}
+
+.calculate_container .borrow_result_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .repayment_calculate_card .card-header {
+    background: #ffffff;
+}
+
+.calculate_container .repayment_calculate_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .repayment_result_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .saving_calculate_card .card-header {
+    background: #ffffff;
+}
+
+.calculate_container .saving_calculate_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .saving_result_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .stamp_calculate_card .card-header {
+    background: #ffffff;
+}
+
+.calculate_container .stamp_calculate_card .card-body {
+    background: #eaeae7;
+}
+
+.calculate_container .stamp_result_card .card-body {
+    background: #eaeae7;
+}
+
+.site_logo {
+    width: 70px;
+}
+
+.copyright {
+    background: maroon;
+}
+
+.header-contact {
+    background: lightgray;
+    font-family: 'Nitti Grotesk Semi';
+    color: #900a22;
+}
+
+@media (max-width: 470px) {
+    .header-contact p {
+        font-size: 0.7rem;
+    }
+
+    .navbar_wrapper .site_navbar_mobile_nav .nav .brand .nav-link {
+        font-size: 2.2rem;
+        text-align: left;
+    }
+}
+
+
+#call_us {
+    font-size: 0.7rem;
+}
+
+.site_navbar .site_name {
+    position: relative;
+    top: 7px;
+}
